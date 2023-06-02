@@ -75,6 +75,7 @@ def inference():
 
 HOST = "127.0.0.1"
 PORT = 8085
+app = create_app()
 
 if __name__ == "__main__":
-    create_app().run(HOST, PORT)
+    app.run(HOST, PORT)
